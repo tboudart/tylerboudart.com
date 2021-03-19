@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(247, 247, 247); /*  #e0d6bf #fffaee original color on wireframe*/
+}
+
+h2, p, footer {
+    font-family: 'Libre Baskerville', serif;
+    color:  rgb(0, 0, 94);
+}
+
+h1, li, nav a {
+    font-family: 'Libre Baskerville', serif;
+    color:rgb(247, 247, 247);
+    /* transition: all 1s linear; Need to figure out how to stop running during window resizing */
+}
+
+a {
+    text-decoration: none;
+} 
+
+a:active {
+    position: relative;
+    top: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 247, 247);
+}
+
+header {
+    background-color:rgb(0, 0, 94);
+    position: fixed;
+    top: 0%;
+    width: 97%;
+    height: 5vw;
+    z-index: 1;
+}
+
+h1 {
+    display: inline;
+    position: relative;
+    top: 1.25vw;
+    font-size: 2vw;
+    margin-left: 5vw;
+}
+
+nav {
+    font-size: 1.5vw;
+    float: right;
+    margin-top: 1.75vw;
+    margin-right: 5vw;
+}
+
+li {
+    display: inline;
+    padding: 0 2vw;
+}
+
+.boarder {
+    border-left: 1.5px solid rgb(247, 247, 247);
+    border-right: 1.5px solid rgb(247, 247, 247);
+    padding: 0 2.5vw;
+}
+
+.main-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap:wrap;
+  }
+
+.web-scraping-project, .website-project, .data-visualization, .regression-analysis {
+    position: relative;
+    top: 6vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.web-scraping-div, .data-visualization-div, .website-project-div, .regression-analysis-div {
+    position: relative;
+    top: 1vw;
+    margin-left: -3vw;
+    width: 55%;
+    margin-right: 3vw;
+}
+
+h2 {
+font-size: min(1.4vw, 20px);
+}
+
+p {
+    font-size: min(1.2vw, 18px);
+}
+
+.hyperlinked-icons {
+    position: relative;
+    top: 13vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-grid-item {
+    position: relative;
+    margin: 0 3vw;
+}
+
+footer {
+    position: relative;
+    top: 14vw;
+    font-size: 11px;
+    text-align: right;
+    margin-right: 3vw;
+}

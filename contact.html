@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Tyler Boudart</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tyler Boudart">
+        <meta name="keywords" content="Tyler Boudart, personal website, career information, career resources, data science, Master of Science, Master's Degree, student, job candidate, contact me">
+        <meta name="description" content="Tyler Boudart's personal website containing background, career information, and project details.">
+        <link href="_CSS/contactStyles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Tyler Boudart</h1></a>
+            <nav>
+                <uo>
+                    <li><a href="about.html">About Me</a></li>
+                    <li class="boarder"><a href="projects.html">Projects</a></li>
+                    <li>Contact</li>
+                </uo>
+            </nav>
+        </header>
+        <section class="overview">
+            <h2>Contact Me</h2>
+            <h3>Email: <a href="mailto:tlboudart@gmail.com">tlboudart@gmail.com</a></h3>
+            <form id="contactForm" action="submission.html" method="post">
+                <section class="users-info">
+                    <label for="name">Name:</label>
+                    <br />
+                    <input type="text" name="name" id="name">
+                </section>
+                <hr />
+                <section class="users-info">
+                    <label for="company">Email Address:</label>
+                    <br />
+                    <input type="text" name="email" id="email">
+                </section>
+                <hr />
+                <section class="message">
+                    <label for="message_content">Please type your message below, including any preferred method of contact:</label>
+                    <br />
+                    <textarea id="message_content" name="message_content" rows="10" cols="100"></textarea>
+                </section>
+                <hr />
+                <section class="submission">
+                    <input type="submit" value="Submit" onclick="saveFile()" />
+                </section>
+            </form>
+        </section>
+        <script src="_JavaScript\Main.js"></script>
+        <div class="hyperlinked-icons">
+            <a href="https://github.com/" target="_blank">
+                <img class="icon" src="_buttons/GitHub-Mark-120px-plus.png" alt="link to GitHub profile" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/boudart/" target="_blank">
+                <img class="icon" src="_buttons/LI-In-Bug.png" alt="link to LinkedIn profile" width="30" height="30">
+            </a>
+            <a href="mailto:tlboudart@gmail.com">
+                <img class="icon" src="_buttons/Email-Icon.png" alt="link to e-mail me" width="30" height="30">
+            </a>
+        </div>
+        <footer>
+            <p class="copywrite">© 2021 Tyler Boudart</p>
+        </footer>
+    </body>

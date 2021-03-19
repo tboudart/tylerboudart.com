@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tyler Boudart's Projects</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tyler Boudart">
+        <meta name="keywords" content="Tyler Boudart, personal website, career information, career resources, data science, Master of Science, Master's Degree, student, job candidate, projects">
+        <meta name="description" content="Tyler Boudart's personal website containing background, career information, and project details.">
+        <link href="_CSS/projectsStyles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Tyler Boudart</h1></a>
+            <nav>
+                <uo>
+                    <li><a href="about.html">About Me</a></li>
+                    <li class="boarder">Projects</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </uo>
+            </nav>
+        </header>
+        <div class="main-div">
+            <section class="data-visualization">
+                <figure>
+                    <img src="_images/ShinyDashboard.JPG" alt="Shiny Dashboard created using R and incorporating interactivity.">
+                    <figcaption hidden="hidden">Shiny Dashboard created using R and incorporating interactivity</figcaption>
+                </figure>
+                <div class="data-visualization-div">
+                    <h2>Global Terrorism Data Visualization</h2>
+                    <p>
+                        I completed a group project in my data visualization course using Global Terrorism data covering 1970 - 2017. My contribution to the project was creating an interactive Shiny Dashboard using R. The dashboard and its graphs were code solely by me using ggplot2 and thinking about the data, user, and task. I created seven subsets of the main data frame to allow the user to choose between displaying seven different qualitative attributes of interest. The user can select a minimum number of fatalities for a class to be displayed in the graphs and animate through the years. The dashboard allows the user to examine the trends of different qualitative attributes like terrorist organizations, target type, attack type, and more, to see how they change over time or are related to each other in specific years. I also have experience coding other types of graphs in R and using Tableau.
+                    </p>
+                </div>
+            </section>
+            <section class="regression-analysis">
+                <figure>
+                    <img src="_images/Rplot.JPEG" alt="Regression analysis, Residuals vs. Fitted Values">
+                    <figcaption hidden="hidden">Regression analysis, Residuals vs. Fitted Values</figcaption>
+                </figure>
+                <div class="regression-analysis-div">
+                    <h2>Chicago Crime Regression Analysis</h2>
+                    <p>
+                        As part of a group project, I developed separate regression models using R to predict the daily number of batteries and number of robberies in Chicago based on Chicago crime data, weather data, Chicago Park District permit data, and unemployment data. I tested interactive and second-order terms and used stepwise feature selection to find the best model with the given data. I tested several potential models using cross-validation and chose the model that minimized the cross-validation errors while striking a balance with the model's simplicity. I checked the residual assumptions and both models exhibit autocorrelation as indicated by rejecting the null hypothesis of the Durbin-Watson Test. If I had more time, I would try using an ARMA model instead of multiple regression.
+                    </p>
+                </div>
+            </section>
+            <section class="web-scraping-project">
+                <figure>
+                    <img src="_images/greenCoffee450Wv2.JPG" alt="Tyler's web scraping Python code">
+                    <figcaption hidden="hidden">Tyler's web scraping Python code</figcaption>
+                </figure>
+                <div class="web-scraping-div">
+                    <h2>Unroasted Coffee Buying Guide - From Webpages to Structured Data</h2>
+                    <p>
+                        I developed Python programs to scrape data from multiple unroasted coffee bean vendors and structured it in Excel tables. I used python libraries Beautiful Soup, Requests, and XlsxWriter to gather the necessary information to help guide my coffee buying decisions. A key feature used to help guide my buying decision is the cupping score, which is calculated differently based on vendor. I, therefore, standardized the different vendors' cupping scores into Z-scores so I could compare the price per cupping score across vendors. I also have experience building web crawlers with Python by extending the HTMLParser class.
+                    </p>
+                </div>
+            </section>
+            <section class="website-project">
+                <figure>
+                    <img src="_images/HTML-and-CSS-Code-450W.JPG" alt="tylerboudart.com HTML and CSS code">
+                    <figcaption hidden="hidden">tylerboudart.com HTML and CSS code</figcaption>
+                </figure>
+                <div class="website-project-div">
+                    <h2>Designed Personal Website</h2>
+                    <p>
+                        I taught myself HTML, CSS, and JavaScript to build this website from scratch. This is the first website I have coded and I tried to incorporate as many HTML semantic elements as I could. I do not intend to be a web designer but learned to code a website to learn more coding languages like JavaScript and have a better understanding of how websites work to help build web crawlers more efficiently using Python.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="hyperlinked-icons">
+            <a href="https://github.com/" target="_blank">
+                <img class="icon-grid-item" src="_buttons/GitHub-Mark-120px-plus.png" alt="link to GitHub profile" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/boudart/" target="_blank">
+                <img class="icon-grid-item" src="_buttons/LI-In-Bug.png" alt="link to LinkedIn profile" width="30" height="30">
+            </a>
+            <a href="mailto:tlboudart@gmail.com">
+                <img class="icon-grid-item" src="_buttons/Email-Icon.png" alt="link to e-mail me" width="30" height="30">
+            </a>
+        </div>
+        <footer>
+            <p class="copywrite">© 2021 Tyler Boudart</p>
+        </footer>
+    </body>
