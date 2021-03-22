@@ -110,10 +110,10 @@ p {
     margin: 0 3vw;
 }
 
-footer {
+footer p {
     position: relative;
-    top: 14vw;
-    font-size: 11px;
+    top: 13vw;
+    font-size: 10px;
     text-align: right;
     margin-right: 3vw;
 }

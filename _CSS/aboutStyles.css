@@ -230,9 +230,9 @@ section div h2 {
 
 .hyperlinked-icons {
     position: relative;
-    top: 20vw;
+    top: 10vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .icon-grid-item {
@@ -240,10 +240,10 @@ section div h2 {
     margin: 0 3vw;
 }
 
-footer {
+footer p {
     position: relative;
-    top: 20vw;
-    font-size: 11px;
-    text-align: right;
-    margin-right: 3vw;
+    top: 10vw;
+    font-size: 10px;
+    text-align: left;
+    margin-left: 3vw;
 }

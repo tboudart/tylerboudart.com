@@ -83,14 +83,14 @@ h2 {
     margin-left: 5vw;
 }
 
-p {
+section p {
     font-size: min(1.3vw, 18px);
     margin-left: 5vw;
 }
 
 .hyperlinked-icons {
     position: relative;
-    Top: 10vw;
+    Top: 6vw;
     display: flex;
     justify-content: center; 
 }
@@ -100,10 +100,10 @@ p {
     margin: 0 3vw auto;
 }
 
-footer {
+footer p {
     position: relative;
-    right: 3vw;
-    top: 11vw;
-    font-size: 11px;
+    right: 0vw;
+    top: 6vw;
+    font-size: 10px;
     text-align: center;
 }

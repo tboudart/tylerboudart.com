@@ -92,10 +92,10 @@ form hr {
     margin: 0 3vw auto;
 }
 
-footer {
+footer p {
     position: relative;
     right: 0vw;
     top: 10vw;
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
 }
