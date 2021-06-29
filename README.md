@@ -1,7 +1,2 @@
 # tylerboudart.com
-Code for my personal website, although without the image files. This is the first website I have ever coded. 
-Not all the code in this repository is used in the final website that is live at tylerboudart.com.
-Images won't render if you use only the code in the folders. To see images, visit the live site. 
-
-
-Don't hestitate to email me at tlboudart@gmail.com if you have any comments, questions, or suggestions.
+I taught myself HTML, CSS, and JavaScript to build this website from scratch. This is the first website I have coded and I tried to incorporate as many HTML semantic elements as I could. I do not intend to be a web designer but learned to code a website to learn more coding languages like JavaScript and have a better understanding of how websites work to help build web crawlers more efficiently using Python.
