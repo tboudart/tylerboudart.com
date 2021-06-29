@@ -71,7 +71,7 @@ li {
     flex-wrap:wrap;
   }
 
-.web-scraping-project, .website-project, .data-visualization, .regression-analysis {
+.web-scraping-project, .website-project, .data-visualization, .regression-analysis, .financial-markets, .water-pump, .life-expectancy {
     position: relative;
     top: 6vw;
     width: 100%;
@@ -82,9 +82,8 @@ li {
     flex-wrap: wrap;
 }
 
-.web-scraping-div, .data-visualization-div, .website-project-div, .regression-analysis-div {
+.web-scraping-div, .data-visualization-div, .website-project-div, .regression-analysis-div, .financial-markets-div, .water-pump-div, .life-expectancy-div {
     position: relative;
-    top: 1vw;
     margin-left: -3vw;
     width: 55%;
     margin-right: 3vw;
