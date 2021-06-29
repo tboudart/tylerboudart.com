@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Tyler Boudart's Projects</title>
@@ -22,13 +22,51 @@
             </nav>
         </header>
         <div class="main-div">
+            <section class="life-expectancy">
+                <figure>
+                    <img src="_images/Life_Expectancy_Confusion_Matrix.jpg" alt="Gradient Boosting confusion matrix results classifying the country status.">
+                    <figcaption hidden="hidden">Gradient Boosting confusion matrix results classifying the country status</figcaption>
+                </figure>
+                <div class="life-expectancy-div">
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/Life-Expectancy-Regression-Analysis-and-Classification">Life Expectancy (WHO) Regression Analysis and Classification</a></h2>
+                    <p>
+                        I contributed to a group project using the Life Expectancy (WHO) dataset from Kaggle where I performed regression analysis to predict life expectancy and classification to classify countries as developed or developing. The project was completed in Python using the pandas, Matplotlib, NumPy, seaborn, scikit-learn, and statsmodels libraries.<br><br>
+                        The regression models were fitted on the entire dataset, along with subsets for developed and developing countries. I tested ordinary least squares, lasso, ridge, and random forest regression models. Random forest regression performed the best on all three datasets and did not overfit the training set. The testing set R<sup>2 </sup> was .96 for the entire dataset and developing country subset. The developed country subset achieved an R<sup>2 </sup> of .8.<br><br>
+                        I tested seven different classification algorithms to classify a country as developing or developed. The models obtained testing set balanced accuracies ranging from 86% - 99%. From best to worst, the models included gradient boosting, random forest, Adaptive Boosting (AdaBoost), decision tree, k-nearest neighbors, support-vector machines, and naive Bayes. I tuned all the models' hyperparameters. None of the models overfitted the training set.
+                    </p>
+                </div>
+            </section>
+            <section class="water-pump">
+                <figure>
+                    <img src="_images/Clustering_450W.jpg" alt="K-means clustering hyperparameters tuning using three metrics.">
+                    <figcaption hidden="hidden">K-means clustering hyperparameters tuning using three metrics</figcaption>
+                </figure>
+                <div class="water-pump-div">
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/Tanzanian-Water-Pumps-Clustering-and-Classification">Tanzanian Water Pumps Clustering and Classification</a></h2>
+                    <p>
+                        For this group project, I performed cluster analysis and classification using Python to predict one of three classes for water pumps; functional, functional but needs repair, and non-functions. I used clustering to find hidden data structures to exploit for fitting individual classification techniques with better results than using the entire dataset. Unfortunately, k-means clustering, DBSCAN, hierarchical clustering, nor OPTICS produced well-defined clusters. The entire dataset was therefore used for fitting classification algorithms. The two classification techniques I was responsible for were k-nearest neighbors and stacked generalization ensemble. For the latter, I combined the best models each group member developed. All the models had a hard time predicting the functional but need repair class. My best model was only able to achieve an accuracy of 76%.
+                    </p>
+                </div>
+            </section>
+            <section class="financial-markets">
+                <figure>
+                    <img src="_images/Financial_Markets_450W.jpg" alt="Lasso regression plot of mean-squared error vs log of lambda.">
+                    <figcaption hidden="hidden">Lasso regression plot of mean-squared error vs log of lambda</figcaption>
+                </figure>
+                <div class="financial-markets-div">
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/Financial-Markets-Regression-Analysis">Financial Markets Regression Analysis</a></h2>
+                    <p>
+                        My role in this group project was to perform regression analysis on quarterly financial data to predict a company's market capitalization. I used R to develop ordinary least squares (OLS), stepwise, ridge, lasso, relaxed lasso, and elastic net regression models.  I first used stepwise and OLS regression to develop a model and examine its residual plots. The plot displaying the residuals against the predicted values indicated multiplicative errors. I, therefore, took the natural log transformation of the dependent variable. The resulting model's R<sup>2</sup> was significantly, negatively impacted. After examining scatter plots between the log transformation of market capitalization and the independent variables, I discovered the independent variables also had to be transformed to produce a linear relationship. Using the log transformation of both the dependent and independent variables, I developed models using all the regression techniques mentioned to strike a balance between R<sup>2</sup> and producing a parsimonious model. All the models produced similar results, with an R<sup>2</sup> of around .80. Since OLS is easiest to explain, had similar residual plots, and the highest R<sup>2</sup> of all the models, it was the best model developed.
+                    </p>
+                </div>
+            </section>
             <section class="data-visualization">
                 <figure>
                     <img src="_images/ShinyDashboard.jpg" alt="Shiny Dashboard created using R and incorporating interactivity.">
                     <figcaption hidden="hidden">Shiny Dashboard created using R and incorporating interactivity</figcaption>
                 </figure>
                 <div class="data-visualization-div">
-                    <h2>Global Terrorism Data Visualization</h2>
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/Global-Terrorism-Data-Visualization">Global Terrorism Data Visualization</a></h2>
                     <p>
                         I completed a group project in my data visualization course using Global Terrorism data covering 1970 - 2017. My contribution to the project was creating an interactive Shiny Dashboard using R. The dashboard and its graphs were code solely by me using ggplot2 and thinking about the data, user, and task. I created seven subsets of the main data frame to allow the user to choose between displaying seven different qualitative attributes of interest. The user can select a minimum number of fatalities for a class to be displayed in the graphs and animate through the years. The dashboard allows the user to examine the trends of different qualitative attributes like terrorist organizations, target types, attack types, and more, to see how they change over time or are related to each other in specific years. I also have experience coding other types of graphs in R and using Tableau.
                     </p>
@@ -40,21 +78,9 @@
                     <figcaption hidden="hidden">Regression analysis, Residuals vs. Fitted Values</figcaption>
                 </figure>
                 <div class="regression-analysis-div">
-                    <h2>Chicago Crime Regression Analysis</h2>
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/Chicago-Crime-Regression-Analysis">Chicago Crime Regression Analysis</a></h2>
                     <p>
                         As part of a group project, I developed separate regression models using R to predict the daily number of batteries and robberies in Chicago using four different datasets. I tested interactive and second-order terms and used stepwise feature selection to find the best model with the given data. I tested several potential models using cross-validation and chose the model that minimized the cross-validation errors while striking a balance with the model's simplicity. I checked the residual assumptions and both models exhibit autocorrelation as indicated by rejecting the null hypothesis of the Durbin-Watson Test. If I had more time, I would try using an ARMA model instead of multiple regression.
-                    </p>
-                </div>
-            </section>
-            <section class="web-scraping-project">
-                <figure>
-                    <img src="_images/greenCoffee450Wv2.jpg" alt="Tyler's web scraping Python code">
-                    <figcaption hidden="hidden">Tyler's web scraping Python code</figcaption>
-                </figure>
-                <div class="web-scraping-div">
-                    <h2>Unroasted Coffee Buying Guide - From Webpages to Structured Data</h2>
-                    <p>
-                        I developed Python programs to scrape data from multiple unroasted coffee bean vendors and structured it in Excel tables. I used python libraries Beautiful Soup, Requests, and XlsxWriter to gather the necessary information to help guide my coffee buying decisions. A key feature used to help guide my buying decision was the cupping score, which is calculated differently based on vendor. I, therefore, standardized the different vendors' cupping scores into Z-scores so I could compare the price per cupping score across vendors. I also have experience building web crawlers with Python by extending the HTMLParser class.
                     </p>
                 </div>
             </section>
@@ -64,9 +90,21 @@
                     <figcaption hidden="hidden">tylerboudart.com HTML and CSS code</figcaption>
                 </figure>
                 <div class="website-project-div">
-                    <h2>Designed Personal Website</h2>
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/tylerboudart.com">Designed Personal Website</a></h2>
                     <p>
-                        I taught myself HTML, CSS, and JavaScript to build this website from scratch. This is the first website I have coded and I tried to incorporate as many HTML semantic elements as I could. I do not intend to be a web designer but learned to code a website to learn more coding languages like JavaScript and have a better understanding of how websites work to help build web crawlers more efficiently using Python.
+                        I taught myself HTML, CSS, and JavaScript to build this website from scratch. This is the first website I have coded and I tried to incorporate as many HTML semantic elements as I could. I do not intend to be a web designer but learned to code a website to learn more coding languages like JavaScript and better understand how websites work to help build web crawlers more efficiently using Python.
+                    </p>
+                </div>
+            </section>
+            <section class="web-scraping-project">
+                <figure>
+                    <img src="_images/greenCoffee450Wv2.jpg" alt="Tyler's web scraping Python code">
+                    <figcaption hidden="hidden">Tyler's web scraping Python code</figcaption>
+                </figure>
+                <div class="web-scraping-div">
+                    <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/tboudart/GreenCoffeeWebCrawler">Unroasted Coffee Buying Guide - From Webpages to Structured Data</a></h2>
+                    <p>
+                        I developed Python programs to scrape data from multiple unroasted coffee bean vendors and structured it in Excel tables. I used python libraries Beautiful Soup, Requests, and XlsxWriter to gather the necessary information to help guide my coffee buying decisions. A key feature used to help guide my buying decision was the cupping score, which is calculated differently based on vendor. I, therefore, standardized the different vendors' cupping scores into Z-scores so I could compare the price per cupping score across vendors. I also have experience building web crawlers with Python by extending the HTMLParser class.
                     </p>
                 </div>
             </section>
